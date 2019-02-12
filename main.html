@@ -3,7 +3,6 @@
 <!-- 
 
 
-
 -->
 
 
@@ -20,20 +19,27 @@
         <style>
             
             body{
-                background-color: #ffffff;
+                background-color: rgb(240, 240, 240);
                 overflow-x: hidden;
                 font-family: 'Nunito', sans-serif;
+                outline:none;
             }
             
             #kao-logo{
                 width:100px;
-                margin-left:10px;
+                margin-left:25px;
                 margin-top:10px;
+                transition:0.6s;
+            }
+            #kao-logo:hover{
+                -ms-transform: rotate(360deg); 
+                -webkit-transform: rotate(360deg); 
+                transform: rotate(360deg); 
             }
             
             #Main-heading{
                 float:right;
-                margin-right:196px;
+                margin-right:162px;
                 margin-top:14px;
                 font-size:50px;
                 font-family: 'Fredoka One', cursive;
@@ -41,7 +47,7 @@
             }
             #secound-heading{
                 float:right;
-                margin-right:147px;
+                margin-right:111px;
                 margin-top:-31px;
                 font-size:20px;
                 color: #b3b3b3;
@@ -57,7 +63,9 @@
                 margin-left:-8px;
                 width:100%;
                 box-shadow:0px 0px 5px 5px  #e3e3e3;
+                transition:0.4s;
             }
+            
             
             .sub-headins{
                 background-color:rgb(42, 209, 209);
@@ -86,8 +94,13 @@
                 text-align:left;
 
             }
+            
+            th{
+                padding:5px;
+            }
 
             td{
+                
                 padding:5px;
                 border-left:solid;
                 border-width:5px;
@@ -146,31 +159,70 @@
                 width:80%;
                 border-left:15px solid rgba(204, 204, 204);
                 margin-bottom:10px;
+                transition:0.2s;
             }
+            .sponsors:hover{
+                box-shadow:0px 2px 5px 1px rgb(0,0,0,0.1);
+            }
+            
+            nav{
+                background-color:rgb(227, 227, 227);
+                margin-left:-22px;
+                width:107%;
+                padding:10px;
+                margin-top:0px;
+                position: -webkit-sticky;
+                position: fixed;
+                top: 0;
+            }
+            
+            .navbtn{
+                padding:10px;
+                cursor:pointer;
+                text-decoration:none;
+                color:rgb(128, 128, 128);
+            }
+            .navbtn:hover{
+                padding:10px;
+                background-color:rgb(219, 219, 219);
+            }
+            
             
             
         </style>
         
     </head>
     <body>
-    
+      <nav>
+            <a class = "navbtn" href="#about">About</a>
+            <a class = "navbtn" href="#event">Events</a>
+            <a class = "navbtn" href="#score">Scores</a>
+            <a class = "navbtn" href="#team">Teams</a>
+            <a class = "navbtn" href="#judge">Judges</a>
+            <a class = "navbtn" href="#coc">Code of Conduct</a>
+            <a class = "navbtn" href="#sponsor">Sponsors</a>
+        </nav>
+        <br><br>
         <img id = "kao-logo" src="https://www.khanacademy.org/computer-programming/kao-2019-logo/5893158225215488/latest.png" width="200px">
         
         <h1 id = 'Main-heading'> KAO 2019</h1>
         <h2 id = 'secound-heading'>Khan Academy Olympics 2019</h2>
         
         
+        <br>
         <p id = "info-banner">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum turpis eget sem porttitor, malesuada dignissim libero blandit.</p>
         
         
+        
+        
         <br>
-        <h2 class = "sub-headins">Welcome to the KAO</h2>
+        <h2 class = "sub-headins" id = "about">Welcome to the KAO</h2>
         
         
         <p id = "kao-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum turpis eget sem porttitor, malesuada dignissim libero blandit. Etiam a vestibulum nisl. Nam viverra augue mi, id tincidunt sem luctus a. Duis vehicula massa quis justo placerat, scelerisque dictum nisi scelerisque. In ut iaculis neque. Donec at enim magna. Ut porta elit sit amet volutpat ultrices. Sed tincidunt vel nisi ut lobortis.</p>
         
         <br>
-        <h2 class = "sub-headins">Events Info</h2>
+        <h2 class = "sub-headins" id = "event">Events Info</h2>
         <br>
         
         <!-- Events -->
@@ -298,7 +350,7 @@
             
             
         <br>
-        <h2 class = "sub-headins">Scoreboard</h2>
+        <h2 class = "sub-headins" id = "score">Scoreboard</h2>
         <br>
         
         <p id = "medals"><b>Medals</b></p>
@@ -384,7 +436,7 @@
         
         <!-- teams -->
         <br>
-        <h2 class = "sub-headins">Teams</h2>
+        <h2 class = "sub-headins" id = "team">Teams</h2>
         <br>
         
 <h2 class = "team-heading" style="color:rgb(209, 58, 58);">team red leaf</h2>
@@ -470,9 +522,21 @@
             <li>Hello World</li>
         </ul>
         
+        <br>
+        <h2 class = "sub-headins" id = "judge">Judges</h2>
+        <br>
+        
+        <ul class = "team-list" style="background-color:#404040;">
+            <li>Bob Cheater - Hi(Helloio), Hi(Helloio), Hi(Helloio), Hi(Helloio)</li>
+            <li>Bob Cheater - Hi(Helloio), Hi(Helloio), Hi(Helloio), Hi(Helloio)</li>
+            <li>Bob Cheater - Hi(Helloio), Hi(Helloio), Hi(Helloio), Hi(Helloio)</li>
+            <li>Bob Cheater - Hi(Helloio), Hi(Helloio), Hi(Helloio), Hi(Helloio)</li>
+            <li>Bob Cheater - Hi(Helloio), Hi(Helloio), Hi(Helloio), Hi(Helloio)</li>
+        </ul>
+        
         
         <br>
-        <h2 class = "sub-headins">Code of Conduct</h2>
+        <h2 class = "sub-headins" id = "coc">Code of Conduct</h2>
         <br>
         
         <ul>
@@ -487,7 +551,7 @@
         
         
         <br>
-        <h2 class = "sub-headins">Sponsors</h2>
+        <h2 class = "sub-headins" id = "sponsor">Sponsors</h2>
         <br>
         
         <ul>
@@ -503,6 +567,21 @@
                 
                 <li class = "sponsors"><img class = "s-pic"src="https://www.kasandbox.org/programming-images/avatars/mr-pink-green.png" width="50"> Jimmy McDonald</li>
             </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            <script>
+    
+                
+            </script>
+            
+            
+            
             
     </body>
 
